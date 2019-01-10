@@ -3,88 +3,87 @@
 <head>
     <meta charset="utf-8" />
     <title>Google Clone</title>
-    <!-- <link rel="stylesheet" type="text/css" media="screen" href="css/bootstrap.css" /> -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header>
-        <div>
+    <header class="row m-2">
+        <div class="col-6">
             <a href="#">
                 <img src="img/googlelogo_color_272x92dp.png" alt="">
             </a>
         </div>
-        <nav>
-            <a href="https://www.wikipedia.org/">Wikipédia</a>
-            <a href="https://github.com/Amine42/Google_clone">Home Page</a>
+        <nav class="nav col-6 justify-content-end">
+            <ul class="nav justify-content-end align-items-center">
+                <li class="nav-item">
+                    <a class="nav-link text-dark font-weight-bold" href="https://www.wikipedia.org/">Wikipédia</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-dark font-weight-bold" href="https://github.com/Amine42/Google_clone">Home Page</a>
+                </li>
+            </ul>
         </nav>
     </header>
     <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-        <!-- Indicators -->
         <ol class="carousel-indicators">
             <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
             <li data-target="#carousel-example-generic" data-slide-to="1"></li>
             <li data-target="#carousel-example-generic" data-slide-to="2"></li>
         </ol>
-          
-        <!-- Wrapper for slides -->
         <div class="carousel-inner" role="listbox">
             <div class="carousel-item active">
-                <img src="img/slider1.jpg" alt="...">
+                <img class="w-100" src="img/slider1.jpg" alt="...">
                 <div class="carousel-caption">
-                    <!-- ... -->
+                    <p class="display-4 font-weight-bold">Le moteur de recherche le plus rapide!</p>
+                    <a class="btn bg-success btn-success font-weight-bold" href="https://github.com/Amine42/Google_clone">Utilisez Google!</a>
                 </div>
             </div>
             <div class="carousel-item">
-                <img src="img/slider2.jpg" alt="...">
+                <img class="w-100" src="img/slider2.jpg" alt="...">
                 <div class="carousel-caption">
-                    <!-- ... -->
+                    <p class="display-4 font-weight-bold">Le moteur de recherche le plus rapide!</p>
+                    <a class="btn bg-success btn-success font-weight-bold" href="https://github.com/Amine42/Google_clone">Utilisez Google!</a>
                 </div>
             </div>
             <div class="carousel-item">
-                    <img src="img/slider3.jpg" alt="...">
-                    <div class="carousel-caption">
-                        <!-- ... -->
-                    </div>
+                <img class="w-100" src="img/slider3.jpg" alt="...">
+                <div class="carousel-caption">
+                    <p class="display-4 font-weight-bold">Le moteur de recherche le plus rapide!</p>
+                    <a class="btn bg-success btn-success font-weight-bold" href="https://github.com/Amine42/Google_clone">Utilisez Google!</a>
                 </div>
-            <!-- ... -->
-        </div>
-          
-        <!-- Controls -->
-        <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-        </a>
-        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-        </a>
-    </div>
-    <div>
-        <p>Google est une entreprise américaine de services technologiques fondée en 1998 dans la Silicon Valley, en Californie, par Larry Page et Sergey Brin, créateurs du moteur de recherche Google.</p>
-    </div>
-    <div>
-        <div>
-            <img src="img/money.png" alt="">
-            <p class="title">Gratuit</p>
-            <p>Notre moteur de recherche performant est 100% gratuit!</p>
-        </div>
-        <div>
-            <img src="img/open-source.png" alt="">
-            <p class="title">Open Source</p>
-            <p>Notre moteur de recherche est 100% open source!</p>
-        </div>
-        <div>
-            <img src="img/secure-shield.png" alt="">
-            <p class="title">Sécurisé</p>
-            <p>Notre moteur de recherche est 100% sécurisé!</p>
+            </div>
         </div>
     </div>
-    <footer>
-        <p>Made with ♥ in Mountain View</p>
+    <div class="row justify-content-center mb-4 mt-4 mr-0 ml-0">
+        <p class="lead col-8 text-center font-weight-bold">Google est une entreprise américaine de services technologiques fondée en 1998 dans la Silicon Valley, en Californie, par Larry Page et Sergey Brin, créateurs du moteur de recherche Google.</p>
+    </div>
+    <div class="row justify-content-center mr-0 ml-0 mb-2 mt-2 p-4 col-12 bg-dark text-white">
+        <div class="row  mr-0 ml-0 col-4 justify-content-center">
+            <div class="col-12 row  mr-0 ml-0 justify-content-center p-2">
+                <img class="mb-2" src="img/money.png" alt="">
+            </div>
+            <p class="lead font-weight-bold col-12 text-center">Gratuit</p>
+            <p class="col-8 text-center">Notre moteur de recherche performant est 100% gratuit!</p>
+        </div>
+        <div class="row mr-0 ml-0 col-4 justify-content-center">
+            <div class="col-12 row  mr-0 ml-0 justify-content-center p-2">
+                <img class="mb-2" src="img/open-source.png" alt="">
+            </div>
+            <p class="lead font-weight-bold col-12 text-center">Open Source</p>
+            <p class="col-8 text-center">Notre moteur de recherche est 100% open source!</p>
+        </div>
+        <div class="row mr-0 ml-0 col-4 justify-content-center">
+            <div class="col-12 row  mr-0 ml-0 justify-content-center p-2">
+                <img class="mb-2" src="img/secure-shield.png" alt="">
+            </div>
+            <p class="lead font-weight-bold col-12 text-center">Sécurisé</p>
+            <p class="col-8 text-center">Notre moteur de recherche est 100% sécurisé!</p>
+        </div>
+    </div>
+    <footer class="p-4">
+        <p class="text-center">Made with ♥ in Mountain View</p>
     </footer>
-    <!-- <script type="text/javascript" src="js/bootstrap.js"></script> -->
 </body>
 </html>
